@@ -1,0 +1,422 @@
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {                                             /* делаем рамочки для реегстрации */
+	border: red 3px solid;
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	border: #008000 3px solid;
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;                                                                            /*крутой шриф*/
+	font-size: 16px;
+}
+.header_towline{
+background-color:#e8fcae ;
+padding: 15px 0;
+}
+
+.top_links{
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 10;                                                                                                         /*зет индекс-приоритетность показа(слои)*/
+	color:#564902;
+}
+.top_links >a {
+	color:#564902;
+	text-decoration:underline ;                                                                                          /*подчеркивания регистрации */
+}
+.top_links >a:hover {
+	text-decoration:none ;
+}
+.soc_buttons {
+	color:#564902;
+	float: right;                                                                                                       /* прижатие к левому краю*/
+}
+.soc_buttons >a{
+	color:#564902;
+	font-size: 26px;                                                                                                    /* размер и интервал между иконками */
+	margin-left:8px;
+
+
+}
+.auth-buttons,
+.main_mnu_button {
+      border:none;
+	  background-color: transparent;
+	  font-size: 26px;                                                                                                  /* бордер уберт подчеркивание иконки регистрации */
+}
+.main_mnu_button{
+	color:white;
+	padding: 15px;
+}
+.logo{
+	display: block;
+	padding-left: 5px;
+	color:#fff;
+	font-family: "AmericanTextCRegular";
+	font-size: 50px;
+	text-align: center;
+}
+.top_header{
+	background-color: #515616;
+}
+.main_mnu{
+	background-color: #564902;
+	margin-bottom: 20px;
+
+}
+.main_mnu a{
+	color: #fff ;
+	padding: 15px;
+	display: block;
+	width: 100%;
+}
+.main_mnu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;      /*убирает маркер*/
+	float: left;
+	text-transform: uppercase;
+	z-index: 15;
+
+}
+.top_contacts{
+	float: right;
+	color: #fffcfb;
+	padding: 15px;
+	font-size: 20px;
+	background-color: #562e04;
+	line-height: 40px;                /*межстрочный интервал*/                                                                                                /*позиция фона относительно бэкграундп*  /
+	                                                                                                                      /*делаем такой же фон как у менюшки*/
+}
+.main_mnu ul li {
+	display:inline-block;                                                                                                /*обтикание текста */
+	line-height: 40px;                     /*межстрочный интервал*/
+	z-index: 12;
+}
+.main_mnu a:hover{
+	background-color: #562e04;                                                                                            /* делаем фон менюшки при наведении*/
+	width: 100%;
+}
+
+h1{
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "RobotoCondensedLight";
+}
+.slider_container img{
+
+	max-width: 100%;
+}
+.slider_container{
+	position: relative;
+}
+.next_button,.prev_button{
+	color:white;
+	font-size: 50px;
+	position: absolute;
+	z-index: 10;
+	cursor:pointer ;
+	top:40%;
+	background-color: rgba(255,255,255,.5);                                                                             /* делаем оформление для кнопок навигации */
+	padding: 0 25px;
+	border-radius:10em;
+}
+.next_button{
+	right: 20px;
+}
+.prev_button {
+	left:20px;
+}
+.section_order{
+	background-color: rgba(144, 255, 158, 0.98);
+	padding: 25px 0;
+
+}
+.section_order{
+	font-size: 22px;
+}
+.sell_description{
+	font-size: 20px;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+.button{
+	background-color: #828203;
+	border:medium none;              /* уберает рамочку по краям*/
+	border-radius: 5px;            /*закругляем края*/
+	color:white;
+	display: block;
+	padding: 10px 20px;
+	text-transform: uppercase;   /* капсом текст*/
+	text-align: center;
+}
+.button:hover{
+	background-color: #b4b403;
+}
+.button:active{
+	background-color: #676703;
+}
+.sell_right .button{
+	float:right;
+}
+.hidden{
+	display: none;
+}
+form{
+	padding:50px 20px;
+	background-color:#e8fcae ;
+	border-radius: 5px;
+	max-width: 320px;
+	margin:auto;
+	position: relative;
+}
+form input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.pop_form input[type=text]{
+	 display: block;
+	 width: 90%;
+	 line-height: 24px;
+	 margin: 0 auto 12px;
+	 border: brown 3px solid;
+
+
+}
+.pop_form .button {
+	 margin: 20px auto 0;
+	 border:medium none;
+
+
+}
+.pop_form h3{
+	margin: 10px auto 15px;
+	text-align: center;
+	font-family: "RobotoCondensedBold";
+	text-transform: uppercase;
+}
+/*.main_content{
+	background: #c7b39b url(back.png); /* Цвет фона и путь к файлу */
+/*	color: #fff; /* Цвет текста */
+/*}*/
+.thumb-wrap {
+	position: relative;
+	padding-bottom: 56.25%;               /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+	padding-top: 30px;
+	overflow: hidden;                 /*Отображается только область внутри элемента, остальное будет скрыто*/
+
+}
+.thumb-wrap iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 10%;
+
+}
+.blog_item img{
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.blog_item h3{
+	text-transform: uppercase;
+	font-family: "RobotoCondensedRegular";
+	margin-bottom: 10px;
+
+}
+.blog_item h3 a{
+	color: #423e3e;
+	text-decoration: underline;                                                                                          /*подчеркивание*/
+}
+.blog_item p{
+	color: #423e3e;
+	padding: 2%;
+
+}
+.main_content{
+	background-image:url("bg.png") ;
+
+}
+
+.right-aside {
+	padding: 15px 40px;
+	border-radius: 5px;
+	background-color:lightgray;
+	margin-top: 30px;
+}
+.right-aside h3 {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.footer{
+	background-color:#e8fcae ;
+	padding: 50px 0;
+	color: #fff;
+}
+/*Регистрационное окно*/
+.form {
+	width: 260px;
+	height: 320px;
+	position: relative;
+}
+.form_action {
+	width: 260px;
+	height: 320px;
+	border: 1px solid #D9DEDF;
+	margin: 20px 0 10px 20px;
+	padding: 20px 150px 0 20px;
+	line-height: 30px;
+	border-radius: 5px;
+
+}
+.form_action label {
+	float: left;
+}
+.form_action input {
+	float: right;
+}
+.form_button {
+	width: 432px;
+	height: 50px;
+	margin-left: 20px;
+}
+.form_button button {
+	border:medium none;              /* уберает рамочку по краям*/
+	border-radius: 5px;            /*закругляем края*/
+	display: block;
+	padding: 10px 20px;
+	text-transform: uppercase;   /* капсом текст*/
+	text-align: center;
+}
+
+.top{
+	position: fixed;
+	bottom:25px;
+	right:20px ;
+	background-color: #e0e0e0;
+	z-index: 12;
+	border-radius: 10em;
+    font-size: 26px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+    transition: al .3s ease;                    /* аниммация */
+	opacity: .5;                                 /*не прозрачный фон*/
+
+}
+.top:hover {
+	color: white;
+	background-color:lawngreen;
+	opacity: 1;
+}
+/* майн для второй вкладки BOOK */
+/* /                              */
+/*        /                       */
+/*                 /              */
+/*________________________________*/
+
+.content-text-main  {
+	 display: block;
+	 padding-left: 5px;
+	 color:#423e3e;
+	 font-family: "AmericanTextCRegular";
+	 font-size: 50px;
+	 text-align: center;
+
+ }
+ .content-text-book p{
+	 text-align: center;
+	 display: block;
+	 padding-left: 5px;
+	 color:#423e3e;
+	 font-size: 20px;
+
+ }
+.content-book img {
+	max-width: 100%;
+	margin-top: 20px;
+}
+.quote{
+	color: #332f2f;
+}
+
+html, body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.index-social{
+	background-color: #563907;
+	color: #e8fcae;
+	text-align: center;
+
+}
+
+.link-area .fa-li{
+	width:40px;
+	height:40px;
+	border:solid 1px #545606;
+	list-style-type:none;
+	margin:5px;
+	display:inline-block;
+}
+.index-social a{
+	color: #545606;
+	font-size:25px;
+	display:block;
+	float:left;
+	padding:10px;
+}
+.index-link h3{
+
+	color: #545606;
+	text-align:left;
+
+}
+.index-link{
+	background-color: #e8fcae;
+}
+.index-link ul{
+	padding:0px;
+}
+.index-link ul li{
+	list-style-type:none;
+}
+.index-link ul li a{
+	text-decoration:none;
+	font-size:16px;
+	color: #342d07;
+	display:block;
+	padding:5px 0;
+	text-align:left;
+}
+.index-link ul li a:hover{
+	text-decoration:underline;
+}
+.copy-c{
+	padding-top:15px;
+}
+.link-area >a {
+	color: #563907;
+	font-size: 20px;
+}
+/*.text-center {*/
+	/*text-align: center;*/
+	/*bottom: 5px;*/
+/*}*/
+.link-area {
+	padding: 2%;
+}
+.main_content {
+	padding: 2%;
+}
